@@ -6,35 +6,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
     <title>Fanfara Trapulì</title>
-
+    <!-- CSS -->
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <!-- JQUery -->
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- ANGULARJS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-i18n/1.2.15/angular-locale_it-it.js"></script>    
-    
+
 </head>
 
 <body ng-app="myApp">
+    <!-- Carousel Init-->
     <script type="text/javascript">
         $(function(){  
             $( ".preview" ).click(function() {
@@ -43,9 +29,8 @@
                 $(".embed-responsive").replaceWith(a);
             });
         });
-
-
     </script>
+    
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
@@ -82,9 +67,9 @@
 
     <!-- Header -->
     <a name="about"></a>
+    <!-- SEZIONE INTESTAZIONE -->
     <div class="intro-header">
         <div class="container">
-
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
@@ -94,17 +79,14 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <!-- /.container -->
-
     </div>
     <!-- /.intro-header -->
 
     <!-- Page Content -->
-
     <!-- /.content-section-a -->
-    <!-- DESCRIZIONE/VIDEO -->
+    <!-- SEZIONE DESCRIZIONE/VIDEO -->
     <div class="content-section-a" ng-controller="MainController">
         <div class="container">
 
@@ -168,13 +150,7 @@
                     <h2 class="section-heading">LE RAFFIGURAZIONI</h2>
                     <!--    Carosello di immagini -->
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                      <!-- Indicators 
-                      <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                      </ol>--->
-
+                    	
                       <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
 
@@ -222,7 +198,7 @@
 
                         </div>
 
-                      <!-- Controls -->
+                      <!-- Carousel Controls -->
                       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -233,7 +209,7 @@
                       </a>
 
                     </div>
-                    <!--    FINE Carosello di immagini -->
+                    <!-- FINE Carosello di immagini -->
                 </div>
 
             </div>
@@ -243,7 +219,8 @@
     <!-- /.container -->
 
     <!-- /.content-section-b -->
-    <!-- REPERTORIO -->
+    
+    <!-- SEZIONE REPERTORIO -->
     <div class="content-section-a" ng-controller="MainController">
 
         <div class="container">
@@ -268,8 +245,8 @@
     </div>
     <!-- /.content-section-a -->
 
-    <!-- CONTATTI -->
-	<a  name="contact"></a>
+    <!-- SEZIONE CONTATTI -->
+    <a  name="contact"></a>
     <div class="banner">
 
         <div class="container">
@@ -281,7 +258,7 @@
                 </div>
                 <div class="col-sm-8">
 
-                    <! --  Contatti -->
+                    <!-- Contatti -->
 
                     <ul class="list-inline banner-social-buttons">
                         <li>
@@ -303,44 +280,14 @@
     </div> 
     <!-- /.banner -->
 
-    <!-- Footer
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">Services</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>  -->
-
+    <!-- JS -->
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
     <!-- ANGULARJS -->
     <!-- Modules -->
     <script src="js/angular/app.js"></script>
-
     <!-- Controllers -->
     <script src="js/angular/controllers/MainController.js"></script>
 
